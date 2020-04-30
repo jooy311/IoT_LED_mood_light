@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eunaecho.gproject.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorviolet"
+            android:clipChildren="false">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/basicphoto"/>
+
+            <TextView
+                android:id="@+id/user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:text="ID : "
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:background="@color/colorviolet"
+                    android:text="LOG OUT"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35px" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="right"
+                    android:textSize="40px"
+                    android:text="조물주"/>
+
+                <TextView
+                    android:id="@+id/welcomMessege"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50px"
+                    android:text=" 님 환영합니다!" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnToday"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:background="@color/FirstSquare"
+                    android:text="Today"
+
+                    />
+
+                <Button
+                    android:id="@+id/btnDiary"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:text="diary"
+                    android:background="@color/SecondSquare" />
+
+                <Button
+                    android:id="@+id/btnPixel"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:text="pixel"
+                    android:background="@color/ThirdSquare"
+                    />
+                <Button
+                    android:id="@+id/btnBluetooth"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bluetooth"
+                    />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

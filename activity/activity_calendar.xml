@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.example.eunaecho.gproject.CalendarActivity">
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="330dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_calendar"
+        android:showWeekNumber="false">
+
+    </CalendarView>
+
+
+    <ListView
+        android:id="@+id/myDate"
+        android:background="@color/FirstSquare"
+        android:layout_width="330dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:divider="@drawable/dash"
+        android:text=""
+        android:textColor="#000000"
+        android:visibility="invisible"
+        android:textSize="8px" />
+
+    <Button
+        android:id="@+id/btnGoToAdd"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="일정 추가하기" />
+
+</LinearLayout>
